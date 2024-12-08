@@ -1,0 +1,18 @@
+﻿@{
+    ViewData["Title"] = "Resume DZ#1";
+}
+
+@model ResumeModel
+<div class="text-center">
+    <h1 class="display-4">Resume</h1>
+    <h2 style="font-size: 20px">
+        <p>First Name: @Model.FirstName</p>
+        <p>Last Name: @Model.LastName</p>
+        <p>Full Name: @Model.FullName</p>
+        <p>Date of Birth: @Model.DateOfBirth.ToString("yyyy/mm/dd")</p>
+        <p>Age: @Model.Age</p>
+        <p>FrontEnd: @string.Join(", " , Model.FrontEnd)</p>
+        <p>BackEnd: @string.Join(", " ,Model.BackEnd)</p>
+        <p>Frameworks: @string.Join(", " ,Model.Frameworks)</p>
+    </h2>
+</div>

@@ -1,0 +1,47 @@
+# Build results
+[Dd]ebug/
+[Rr]elease/
+[Dd]ebugPublic/
+[Rr]eleases/
+*.suo
+*.user
+*.tmp
+*.log
+*.obj
+*.cache
+*.suo
+*.user
+*.sln.docstates
+
+# Visual Studio 2015+ diagnostic data
+[Ll]ogFiles/
+[Ll]ogs/
+*.log
+*.trace.log
+*.vs
+
+# Rider
+*.idea
+*.iml
+.idea/
+.Rider/
+
+# Visual Studio for Mac
+*.suo
+*.user
+**/DerivedData/
+**/Library/
+
+# User-specific files
+*.suo
+*.user
+*.sln.docstates
+
+# Build outputs
+**/*.pdb
+**/*.xml
+**/bin/
+**/obj/
+
+# Packages
+**/packages/
