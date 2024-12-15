@@ -1,0 +1,24 @@
+﻿@model List<Food>
+<h1>Menu</h1>
+<ul>
+	@foreach(Food food in Model)
+	{
+		<li>
+			<ul>
+				<li>Meal: @food.Name</li>
+				<li>Weight: @food.Weight kg</li>
+				<li>Cost: @food.Cost $</li>
+			</ul>
+			<br/>
+			<div>
+				<form class="action_button" method="get" asp-action="UpdateFood" asp-route-id="@food.Id"><button type="submit">Update Meal</button></form><br>
+				<form class="action_button" method="post" asp-action="RemoveFood" asp-route-id="@food.Id"><button type="submit">Remove Meal</button></form><br><br>
+			</div>
+		</li>
+	}
+</ul>
+<div>
+	<form method="get" asp-action="AddFood">
+		<button type="submit">Add Meal</button>
+	</form>
+</div>

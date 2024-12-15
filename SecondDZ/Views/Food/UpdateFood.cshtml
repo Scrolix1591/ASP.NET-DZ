@@ -1,0 +1,18 @@
+﻿@model Food
+<h1>Update Meal</h1>
+<div class="form_container">
+	<form method="post" asp-action="UpdateFood">
+		<label>Meal name</label>
+		<input asp-for="Name" type="text"/><br/>
+		<label>Meal weight</label>
+		<input asp-for="Weight" type="number" step="0.01"/><br/>
+		<label>Meal cost</label>
+		<input asp-for="Cost" type="number" step="0.01"/><br/>
+		<input class="submit_button" type="submit" value="Update meal" />
+	</form>
+</div>
+<div>
+	<form method="get" asp-action="GetFood">
+		<button type="submit">Return</button>
+	</form>
+</div>
