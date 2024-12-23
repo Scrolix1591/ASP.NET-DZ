@@ -1,8 +1,8 @@
 ﻿using AutoMapper;
 using StudentTeacher.Core.Models;
-using StudentTeacher.DTOs;
+using StudentTeacher.Core.DTOs;
 
-namespace StudentTeacher.API
+namespace StudentTeacher.Core
 {
     public class MappingProfile : Profile
     {
